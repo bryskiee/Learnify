@@ -3,64 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learnify - Home</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Leanify</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <div class="sidebar">
-        <h2>Learnify</h2>
-        <a href="index.html" class="active">🏠 Home</a>
-        
-        <div class="dropdown">
-            <button class="dropdown-btn">📘 Math ▾</button>
-            <div class="dropdown-content">
-                <a href="subjects/math.html">Go to Math</a>
-            </div>
-        </div>
-
-        <div class="dropdown">
-            <button class="dropdown-btn">🔬 Science ▾</button>
-            <div class="dropdown-content">
-                <a href="subjects/science.html">Go to Science</a>
-            </div>
-        </div>
-
-        <div class="dropdown">
-            <button class="dropdown-btn">📖 English ▾</button>
-            <div class="dropdown-content">
-                <a href="subjects/english.html">Go to English</a>
-            </div>
-        </div>
-
-        <div class="dropdown">
-            <button class="dropdown-btn">💻 Coding ▾</button>
-            <div class="dropdown-content">
-                <a href="subjects/coding.html">Go to Coding</a>
-            </div>
-        </div>
-        
-        <div class="dropdown">
-            <button class="dropdown-btn">🏛️ History ▾</button>
-            <div class="dropdown-content">
-                <a href="subjects/history.html">Go to History</a>
-                <a href="subjects/jose-rizal.html">José Rizal</a>
-            </div>
-        </div>
+        <h2>Leanify</h2>
+        <ul>
+            <li><a href="#">Math</a></li>
+            <li><a href="#">Science</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">English</a></li>
+            <li><a href="#">Coding</a></li>
+        </ul>
     </div>
 
     <div class="content">
-        <div class="welcome-section">
-            <h1>Welcome to Learnify</h1>
-            <p>Your go-to platform for interactive learning. Choose a subject to explore tutorials, resources, and more!</p>
-        </div>
-        
-        <div class="subjects-grid">
-            <a href="subjects/math.html" class="subject-card">📘 Math</a>
-            <a href="subjects/science.html" class="subject-card">🔬 Science</a>
-            <a href="subjects/english.html" class="subject-card">📖 English</a>
-            <a href="subjects/coding.html" class="subject-card">💻 Coding</a>
-            <a href="subjects/history.html" class="subject-card">🏛️ History</a>
-        </div>
+        <h1>Welcome to Leanify</h1>
+        <p>Your interactive learning platform for various subjects.</p>
+
+        <section class="subject-container">
+            <div class="subject-button">Math</div>
+            <div class="subject-button">Science</div>
+            <div class="subject-button">English</div>
+            <div class="subject-button">Coding</div>
+            <div class="subject-button">History</div>
+        </section>
     </div>
+
 </body>
 </html>
