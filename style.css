@@ -65,15 +65,16 @@ body {
     margin-bottom: 30px;
 }
 
-/* Subjects Grid */
-.subjects-grid {
-    display: flex;
-    justify-content: center;
+/* Lessons Grid */
+.lessons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
-    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 20px auto;
 }
 
-.subject-card {
+.lesson-card {
     background: white;
     padding: 20px;
     text-align: center;
@@ -82,11 +83,10 @@ body {
     text-decoration: none;
     color: black;
     font-size: 18px;
-    transition: 0.3s;
-    width: 150px;
+    transition: 0.3s ease-in-out;
 }
 
-.subject-card:hover {
+.lesson-card:hover {
     background: #007bff;
     color: white;
     transform: translateY(-5px);
