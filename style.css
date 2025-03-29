@@ -3,6 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     display: flex;
+    background: #f4f4f4;
 }
 
 /* Sidebar Navigation */
@@ -17,6 +18,7 @@ body {
 
 .sidebar h2 {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .sidebar a, .dropdown-btn {
@@ -40,6 +42,7 @@ body {
 .dropdown-content {
     display: none;
     background: #444;
+    padding-left: 10px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -49,29 +52,11 @@ body {
 /* Content Area */
 .content {
     margin-left: 250px;
-    padding: 20px;
+    padding: 40px;
     flex-grow: 1;
-}
-
-/* Subjects Grid (Homepage) */
-.subjects-grid {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.subject-card {
-    background: white;
-    padding: 20px;
     text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
 }
 
-.subject-card:hover {
-    background: #007bff;
-    color: white;
-}
+.content h1 {
+    font-size: 36px;
+    color: #
