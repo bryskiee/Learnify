@@ -38,11 +38,11 @@ body {
     background: #007bff;
 }
 
-/* Dropdown (Parent-Child Navigation) */
+/* Dropdown Navigation */
 .dropdown-content {
     display: none;
     background: #444;
-    padding-left: 10px;
+    padding-left: 15px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -57,6 +57,37 @@ body {
     text-align: center;
 }
 
-.content h1 {
-    font-size: 36px;
-    color: #
+.welcome-section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+/* Subjects Grid */
+.subjects-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.subject-card {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: 0.3s;
+    width: 150px;
+}
+
+.subject-card:hover {
+    background: #007bff;
+    color: white;
+    transform: translateY(-5px);
+}
