@@ -1,101 +1,97 @@
+/* General Styling */
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
+    margin: 0;
     display: flex;
+    background: #f4f4f4;
 }
 
+/* Sidebar Navigation */
 .sidebar {
     width: 250px;
     background: #333;
     color: white;
     height: 100vh;
-    padding: 20px;
     position: fixed;
-    left: 0;
-    top: 0;
+    padding-top: 20px;
 }
 
 .sidebar h2 {
     text-align: center;
+    margin-bottom: 20px;
 }
 
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sidebar ul li {
-    margin: 15px 0;
-}
-
-.sidebar ul li a {
-    color: white;
-    text-decoration: none;
+.sidebar a, .dropdown-btn {
     display: block;
-    padding: 10px;
-    background: #444;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.sidebar ul li a:hover {
-    background: #555;
-}
-
-.content {
-    margin-left: 270px;
-    padding: 20px;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    background: none;
+    border: none;
     width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.sidebar a:hover, .dropdown-btn:hover {
+    background: #007bff;
+}
+
+/* Dropdown (Parent-Child Navigation) */
+.dropdown-content {
+    display: none;
+    background: #444;
+    padding-left: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Content Area */
+.content {
+    margin-left: 250px;
+    padding: 40px;
+    flex-grow: 1;
     text-align: center;
 }
 
-h1 {
+.content h1 {
+    font-size: 36px;
     color: #333;
 }
 
-section {
-    background: #f4f4f4;
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.subject-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    max-width: 600px;
-    margin: 20px auto;
-}
-
-.subject-button {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+.content p {
     font-size: 18px;
-    font-weight: bold;
-    transition: 0.3s;
-    cursor: pointer;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto 20px;
 }
 
-.subject-button:hover {
-    background: #f0f0f0;
+/* Subjects Grid (Homepage) */
+.subjects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: 20px auto;
 }
 
-.subject-button:nth-child(1),
-.subject-button:nth-child(2),
-.subject-button:nth-child(3) {
-    justify-self: center;
+.subject-card {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
 }
 
-.subject-button:nth-child(4),
-.subject-button:nth-child(5) {
-    grid-column: span 2;
-    justify-self: center;
+.subject-card:hover {
+    background: #007bff;
+    color: white;
+    transform: translateY(-5px);
 }
