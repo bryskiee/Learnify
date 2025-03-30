@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math - Learnify</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Learnify</h2>
+        <a href="../index.html">🏠 Home</a>
+        <a href="math.html" class="active">📘 Math</a>
+        <a href="science.html">🔬 Science</a>
+        <a href="english.html">📖 English</a>
+        <a href="coding.html">💻 Coding</a>
+    </div>
+
+    <div class="content">
+        <h1>📘 Mathematics</h1>
+        <img src="../images/math.jpg" alt="Math Image">
+        <p>Mathematics is the study of numbers, shapes, and patterns. It is used in science, engineering, finance, and everyday life.</p>
+
+        <h2>Key Topics in Math</h2>
+        <ul>
+            <li>Arithmetic: Basic operations like addition, subtraction, multiplication, and division.</li>
+            <li>Algebra: Using symbols and letters to solve equations.</li>
+            <li>Geometry: The study of shapes, angles, and measurements.</li>
+            <li>Statistics: The collection and analysis of data.</li>
+        </ul>
+    </div>
+</body>
+</html>
